@@ -14,8 +14,21 @@
             Console.WriteLine(names[4] + " isn't in The Matrix...");
             Console.WriteLine(names[names.Count - 1] + " is the real bad guy");
             Console.WriteLine(names[rand]);
-            Console.ReadLine(); // Keeps program from closing 
+            for (int i = 0; i <= names.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + names[i]);
+            }
 
+            Console.ReadLine(); // Keeps program from closing 
+            List<int> nums = new List<int> { 1, 2, 3, 4, 5, 6 }; Console.WriteLine(nums[0] + " is 'The One'.");
+            Console.WriteLine(nums[3] + " is 4");
+            Console.WriteLine("There are " + nums.Count + " numbers in my List."); nums[3] = 14;
+            Console.WriteLine(nums[3] + " is now 14.");
+            Console.WriteLine(nums[nums.Count - nums.Count]);
+            Console.WriteLine(nums[4] + " isn't in The Matrix...");
+            Console.WriteLine(nums[nums.Count - 1] + " is the real bad guy");
+            Console.WriteLine(nums[rand]);
+            Console.ReadLine(); // Keeps program from closing
         }
     }
 }
